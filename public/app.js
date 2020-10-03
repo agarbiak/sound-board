@@ -2,8 +2,7 @@ const soundsElement = document.querySelector('#sounds');
 const stopButton = document.querySelector('#stopButton');
 const players = [];
 
-// Keyboard keys 1 - 9
-let keyCodes = [49, 50, 51, 52, 53, 54, 55, 56, 57, 83];
+let keyCodes = ["1", "2", "3", "4", "5", "6", "7", "8"];
 
 stopButton.addEventListener('click', stopAll);
 
@@ -57,24 +56,21 @@ function soundPress(div, player) {
 
 function listenKeyPress() {
   document.addEventListener('keydown', (event) => {
-    console.log(event);
-    if (event.keyCode == 32) return stopAll();
-    const playerIndex = keyCodes.indexOf(event.keyCode);
+    if (event.key == " " || event.key == "s") return stopAll();
+    const playerIndex = keyCodes.indexOf(event.key);
     const playerAndDiv = players[playerIndex];
     if (playerAndDiv && !playerAndDiv.keydown) {
       playerAndDiv.keydown = true;
-      playerAndDiv.key.style.transform = 'scaleY(0.75)';
       soundPress(playerAndDiv.soundDiv, playerAndDiv.player);
     }
   });
 
   document.addEventListener('keyup', (event) => {
-    const playerIndex = keyCodes.indexOf(event.keyCode);
+    const playerIndex = keyCodes.indexOf(event.key);
     const playerAndDiv = players[playerIndex];
     if (playerAndDiv) {
       playerAndDiv.soundDiv.style.background = '';
       playerAndDiv.keydown = false;
-      playerAndDiv.key.style.transform = '';
     }
   });
 }
