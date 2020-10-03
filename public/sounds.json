@@ -3,16 +3,16 @@
     "src": "a_yoke.mp3"
   },
   {
+    "title": "Alert",
+    "src": "alert.mp3"
+  },
+  {
     "title": "Don't give a damn",
     "src": "dont_give_a_damn.mp3"
   },
   {
     "title": "Engine feels good",
     "src": "engine_feels_good.mp3"
-  },
-  {
-    "title": "Found",
-    "src": "found.mp3"
   },
   {
     "title": "Not great, not terrible",
@@ -23,11 +23,11 @@
     "src": "simply-lovely.mp3"
   },
   {
-    "title": "Victory!",
-    "src": "victory.mp3"
-  },
-  {
     "title": "You are stupid",
     "src": "you_are_stupid.mp3"
+  },
+  {
+    "title": "Chill",
+    "src": "alright_everyone_chill.mp3"
   }
 ]
