@@ -1,0 +1,34 @@
+body {
+  font-family: 'Montserrat', 'sans-serif';
+  background: #424242;
+  color: white;
+  text-align: center;
+  font-size: 1vw;
+}
+
+h1 {
+  font-size: 5vw;
+}
+
+.container {
+  margin: 0px 3em 0px 3em;
+}
+
+.sound {
+  text-align: center;
+  border: 5px solid #260104;
+  border-radius: 20px;
+  background: #8C030E;
+  margin: 2px;
+  display: inline-block;
+  width: 20%;
+}
+
+img {
+  width: 20%;
+  height: auto;
+}
+
+#stopButton img {
+  transform: scaleX(4);
+}
